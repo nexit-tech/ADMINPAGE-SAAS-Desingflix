@@ -1,0 +1,52 @@
+.selector {
+  position: relative;
+  width: 100%;
+}
+
+.selectorButton {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.chevron {
+  transition: transform 0.2s ease-in-out;
+}
+
+.chevron.open {
+  transform: rotate(180deg);
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: white;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  margin-top: 0.25rem;
+  list-style: none;
+  padding: 0.5rem;
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 10;
+}
+
+.dropdownItem {
+  padding: 0.75rem;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.dropdownItem:hover {
+  background-color: #f1f5f9;
+}

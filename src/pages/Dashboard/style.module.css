@@ -1,0 +1,21 @@
+/* src/pages/Dashboard/style.module.css */
+
+.container {
+  width: 100%;
+}
+
+.pageHeader {
+  margin-bottom: 2rem;
+}
+
+/* NOVO: Grid para os cards de estatísticas */
+.summaryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+/* NOVO: Container para o gráfico */
+.chartContainer {
+  margin-top: 2rem;
+}

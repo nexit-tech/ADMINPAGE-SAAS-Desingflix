@@ -1,0 +1,52 @@
+.tableContainer {
+  background-color: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  overflow: hidden; /* Para o border-radius funcionar na tabela */
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse; /* Remove o espaço entre as células */
+}
+
+.table th, .table td {
+  padding: 1rem 1.5rem;
+  text-align: left;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.table th {
+  background-color: #f8fafc;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  color: #64748b;
+  letter-spacing: 0.05em;
+}
+
+.table tbody tr:last-child td {
+  border-bottom: none; /* Remove a borda da última linha */
+}
+
+.table tbody tr:hover {
+  background-color: #f1f5f9;
+}
+
+/* --- Estilos do Badge de Assinatura --- */
+.badge {
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px; /* Formato de pílula */
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.premium {
+  background-color: #dbeafe; /* Azul claro */
+  color: #1e40af; /* Azul escuro */
+}
+
+.basic {
+  background-color: #f1f5f9; /* Cinza claro */
+  color: #475569; /* Cinza escuro */
+}

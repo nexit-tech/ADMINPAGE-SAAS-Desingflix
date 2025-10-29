@@ -1,0 +1,13 @@
+/* Pode reutilizar o estilo da tabela de clientes, é um bom padrão */
+.tableContainer {
+  background-color: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1.5rem;
+}
+.tableTitle { margin-bottom: 1.5rem; font-weight: 600; }
+.table { width: 100%; border-collapse: collapse; }
+.table th, .table td { padding: 1rem; text-align: left; border-bottom: 1px solid #e2e8f0; }
+.table th { font-size: 0.75rem; text-transform: uppercase; color: #64748b; }
+.table tbody tr:last-child td { border-bottom: none; }
+.amount { font-weight: 500; }

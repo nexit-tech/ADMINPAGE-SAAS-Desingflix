@@ -1,0 +1,15 @@
+.container {
+  width: 100%;
+}
+
+.pageHeader {
+  margin-bottom: 2rem;
+}
+
+.pageHeader h1 {
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  color: #64748b;
+}

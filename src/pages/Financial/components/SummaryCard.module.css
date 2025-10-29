@@ -1,0 +1,52 @@
+/* src/pages/Financial/components/SummaryCard.module.css */
+
+.card {
+  background-color: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  color: #64748b;
+  margin-bottom: 0.25rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.value {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1e293b;
+  line-height: 1.2;
+}
+
+.iconWrapper {
+  width: 56px;
+  height: 56px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* --- NOVAS VARIANTES DE CORES --- */
+.blue { background-color: #eff6ff; color: #3b82f6; }
+.purple { background-color: #f5f3ff; color: #8b5cf6; }
+.green { background-color: #f0fdf4; color: #22c55e; }
+.yellow { background-color: #fffbeb; color: #f59e0b; }
+.gray { background-color: #f8fafc; color: #64748b; }
