@@ -1,21 +1,85 @@
 .container h1 {
+  margin-bottom: 0;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 2rem;
 }
+
+.datePickerWrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.datePickerWrapper label {
+  font-weight: 500;
+  color: #475569;
+}
+
+.datePicker {
+  padding: 0.75rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.datePicker:hover {
+  border-color: #3b82f6;
+}
+
+.datePicker:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
 .summaryGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.5rem;
   margin-bottom: 2rem;
 }
+
 .mainContentGrid {
   display: grid;
-  grid-template-columns: 2fr 1fr; /* Gráfico ocupa 2/3 e tabela 1/3 */
+  grid-template-columns: 2fr 1fr;
   gap: 1.5rem;
   align-items: start;
 }
 
+.noDataMessage {
+  background-color: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 3rem 2rem;
+  text-align: center;
+  color: #64748b;
+}
+
+.noDataMessage p {
+  margin: 0.5rem 0;
+}
+
+.noDataMessage p:first-child {
+  font-weight: 600;
+  font-size: 1.125rem;
+  color: #334155;
+}
+
 /* Responsividade para telas menores */
 @media (max-width: 900px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+  
   .mainContentGrid {
     grid-template-columns: 1fr;
   }

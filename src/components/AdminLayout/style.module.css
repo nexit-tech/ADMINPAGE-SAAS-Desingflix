@@ -1,0 +1,127 @@
+/* src/components/AdminLayout/style.module.css */
+
+.layout {
+  min-height: 100vh;
+  background-color: #f8fafc;
+}
+
+.navbar {
+  background-color: #1e293b;
+  color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 70px;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+.logo h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.navLinks {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+  justify-content: center;
+}
+
+.navLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: all 0.2s;
+  font-weight: 500;
+  border-radius: 8px;
+  white-space: nowrap;
+}
+
+.navLink:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: white;
+}
+
+.navLink.active {
+  background-color: rgba(99, 102, 241, 0.3);
+  color: white;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.5);
+}
+
+.logoutButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  background-color: rgba(239, 68, 68, 0.15);
+  color: #fca5a5;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 1rem;
+  transition: all 0.2s;
+  white-space: nowrap;
+}
+
+.logoutButton:hover {
+  background-color: rgba(239, 68, 68, 0.25);
+  color: #ef4444;
+}
+
+.main {
+  padding: 90px 2rem 2rem 2rem;
+  max-width: 1800px;
+  margin: 0 auto;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+  .navContainer {
+    padding: 0 1rem;
+  }
+  
+  .navLinks {
+    gap: 0.25rem;
+  }
+  
+  .navLink {
+    padding: 0.5rem 0.75rem;
+    font-size: 0.9rem;
+  }
+  
+  .navLink span {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo h2 {
+    font-size: 1.2rem;
+  }
+  
+  .navLinks {
+    gap: 0.25rem;
+  }
+  
+  .logoutButton span {
+    display: none;
+  }
+}
